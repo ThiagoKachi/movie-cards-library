@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: whitesmoke;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .movie-card-header {
@@ -34,23 +43,24 @@ body {
   height: 450px;
   margin: 5px;
   overflow: hidden;
+  position: relative;
   width: 300px;
 }
 
+.movie-card:hover {
+  transform: scale(1.05);
+  transition: transform 400ms;
+}
 
 .movie-card-image {
   width: 100%;
-}
-
-.movie-card-body {
-  flex: 1 1 auto;
-  padding: 20px;
 }
 
 .movie-card-title {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  padding: 5px 10px;
 }
 
 .movie-card-subtitle {
@@ -58,26 +68,32 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
+  padding: 0 10px;
 }
 
 .movie-card-storyline {
   font-size: 14px;
+  padding: 0 10px;
   text-align: justify;
 }
 
 .rating {
   background-color: #007bff;
-  border-radius: 25px;
+  border-radius: 50%;
   color: white;
   font-size: 16px;
   font-weight: 700;
-  padding: 3px 9px;
+  margin-right: 25px;
+  padding: 10px 10px;
 }
 
 .movie-card-rating {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  bottom: 0;
   display: flex;
-  justify-content: flex-end;
-  padding: 12px 20px;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: absolute;
+  width: 100%;
 }

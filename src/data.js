@@ -17,7 +17,7 @@ const movies = [
     title: 'Ghost In The Shell',
     subtitle: 'Ghost In The Shell',
     storyline: 'A hacker known as the Puppet Master is hunted by a female cyborg cop and her partner. This film is a revised version of Ghost in the Shell (1995).',
-    rating: 5,
+    rating: 4.9,
     imagePath: 'images/Ghost_In_The_Shell_2_0.jpg',
   },
   {
